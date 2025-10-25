@@ -3,7 +3,7 @@ import numpy as np
 import time
 
 # Initialize pygame mixer with high quality settings
-pg.mixer.init(frequency=44100, size=-16, channels=2)  # Changed to 2 channels for stereo
+pg.mixer.init(frequency=44100, size=-16, channels=2, allowedchanges=0)  # Changed to 2 channels for stereo
 
 class Audio:
     def __init__(self):
